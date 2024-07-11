@@ -8,8 +8,8 @@ from keras.models import load_model
 def load_and_cache_resources():
     """Uses pre-defined DL model and tokenizer paths, loads them and returns predictor module object. We can use that object for inference."""
     cwd = os.getcwd()
-    model_filepath = r'{}\src\models\dl_model.h5'.format(cwd)
-    tokenizer_filepath = r'{}\src\tokenizers\dl_tokenizer.pickle'.format(cwd)
+    model_filepath = '{}/src/models/dl_model.h5'.format(cwd)
+    tokenizer_filepath = '{}/src/tokenizers/dl_tokenizer.pickle'.format(cwd)
     predictor = Prediction(model_filepath, tokenizer_filepath)
     return predictor
 
