@@ -2,7 +2,7 @@ import streamlit as st
 from src.utils.prediction import load_and_cache_resources
 
 st.set_page_config("Duplicate checker", page_icon=':question:')
-st.title('Questions Duplicate Checker')
+st.title(':question: Questions Duplicate Checker')
 st.divider()
 question1 = st.text_input('Enter Question 1:')
 question2 = st.text_input('Enter Question 2:')
